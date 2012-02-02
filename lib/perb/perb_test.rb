@@ -10,7 +10,7 @@ module Perb
       @session=Perb::Session.new(settings_path)
       #self.settings=(settings_path)
     end
-    
+
     def run
       results=[]
       @session.each do |test|
