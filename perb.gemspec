@@ -7,12 +7,15 @@ spec = Gem::Specification.new do |s|
   s.summary = "run httperf and save results to a database"
   s.description= "A front-end for httperf, saving test results in a database"
   s.requirements = [ 'httperf, a database frontend, couple of other things' ]
+
   s.version = Perb::VERSION
   s.authors = ["Chris Flöß", "Johannes Strampe"]
   s.email = "cfloess@adva-business.com"
+  s.homepage = "https://github.com/johanness/perb"
   s.platform = Gem::Platform::RUBY
+
   s.files = Dir['**/**']
   s.executables = [ 'perb' ]
   s.test_files = Dir["test/test*.rb"]
-  s.has_rdoc = false
+  s.has_rdoc = false # needs to change
 end
