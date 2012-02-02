@@ -1,4 +1,3 @@
-require 'yaml'
 require 'perb/perb_parser'
 require 'perb/session'
 

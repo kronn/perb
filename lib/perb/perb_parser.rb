@@ -1,8 +1,3 @@
-require 'yaml'
-require 'rubygems'
-require "active_record"
-require "ruby-debug"
-
 module Perb
   PERB_FLOAT=/\A\d*\.\d*\z/
   PERB_INTEGER=/\A\d*\z/

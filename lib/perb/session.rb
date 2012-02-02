@@ -1,5 +1,3 @@
-require 'yaml'
-
 module Perb
   class Session
     include Enumerable
