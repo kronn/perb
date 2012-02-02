@@ -116,8 +116,8 @@ class TestPerbParser < Test::Unit::TestCase
   end
 
   def test_entire_stack_all_attributes_are_parsed_out_of_input1
-    parser=klass.new(input1)
-    parsed_attributes=parser.parse
+    parser            = klass.new(input1)
+    parsed_attributes = parser.parse
     all_attributes_sample_set1.each_pair do |attribute, value|
       assert_equal value, parsed_attributes[attribute]
     end
@@ -152,47 +152,47 @@ class TestPerbParser < Test::Unit::TestCase
 
     def all_attributes_sample_set1
       {
-        :timeout                              => "5",
+        :timeout                              => 5,
         :uri                                  => "/",
-        :rate                                 => "5",
-        :num_conns                            => "30",
-        :num_calls                            => "10",
-        :burst_length                         => "1",
-        :actual_conns                         => "30",
-        :total_requests                       => "0",
-        :total_replies                        => "0",
-        :test_duration                        => "5.800",
-        :connections_per_sec                  => "5.2",
-        :ms_per_connection                    => "193.3",
+        :rate                                 => 5,
+        :num_conns                            => 30,
+        :num_calls                            => 10,
+        :burst_length                         => 1,
+        :actual_conns                         => 30,
+        :total_requests                       => 0,
+        :total_replies                        => 0,
+        :test_duration                        => 5.800,
+        :connections_per_sec                  => 5.2,
+        :ms_per_connection                    => 193.3,
         :concurrent_connections               => "<=1",
-        :connection_time_min                  => "0.0",
-        :connection_time_avg                  => "0.0",
-        :connection_time_max                  => "0.0",
-        :connections_time_stddev              => "0.0",
-        :connection_time_latency              => "0.0",
-        :connection_replies_per_connection    => "0.000",
-        :request_per_sec                      => "0.0",
-        :request_duration                     => "0.0",
-        :request_size                         => "0.0",
-        :replies_per_sec_min                  => "0.0",
-        :replies_per_sec_avg                  => "0.0",
-        :replies_per_sec_max                  => "0.0",
-        :replies_per_sec_stddev               => "0.0",
-        :reply_time                           => "0.0",
-        :reply_status_1xx                     => "0",
-        :reply_status_2xx                     => "0",
-        :reply_status_3xx                     => "0",
-        :reply_status_4xx                     => "0",
-        :reply_status_5xx                     => "0",
-        :errors_total                         => "30",
-        :errors_client_timeout                => "0",
-        :errors_socket_timeout                => "0",
-        :errors_connection_refused            => "30",
-        :errors_connection_reset              => "0",
-        :errors_fd_inavailable                => "0",
-        :errors_address_unavailable           => "0",
-        :errors_ftab_full                     => "0",
-        :errors_other                         => "0"
+        :connection_time_min                  => 0.0,
+        :connection_time_avg                  => 0.0,
+        :connection_time_max                  => 0.0,
+        :connections_time_stddev              => 0.0,
+        :connection_time_latency              => 0.0,
+        :connection_replies_per_connection    => 0.000,
+        :request_per_sec                      => 0.0,
+        :request_duration                     => 0.0,
+        :request_size                         => 0.0,
+        :replies_per_sec_min                  => 0.0,
+        :replies_per_sec_avg                  => 0.0,
+        :replies_per_sec_max                  => 0.0,
+        :replies_per_sec_stddev               => 0.0,
+        :reply_time                           => 0.0,
+        :reply_status_1xx                     => 0,
+        :reply_status_2xx                     => 0,
+        :reply_status_3xx                     => 0,
+        :reply_status_4xx                     => 0,
+        :reply_status_5xx                     => 0,
+        :errors_total                         => 30,
+        :errors_client_timeout                => 0,
+        :errors_socket_timeout                => 0,
+        :errors_connection_refused            => 30,
+        :errors_connection_reset              => 0,
+        :errors_fd_inavailable                => 0,
+        :errors_address_unavailable           => 0,
+        :errors_ftab_full                     => 0,
+        :errors_other                         => 0
       }
     end
 end

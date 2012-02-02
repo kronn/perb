@@ -12,7 +12,7 @@ class TestPerbBase < Test::Unit::TestCase
   end
 
   def test_path_to_db_file
-    assert_equal "/home/chris/.perb/perb.sqlite3", klass.connection.instance_variable_get(:@config)[:database]
+    assert_equal "db/perb.sqlite3", klass.connection.instance_variable_get(:@config)[:database]
   end
 
   def test_initializer_takes_string

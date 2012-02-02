@@ -18,7 +18,7 @@ class TestRunner < Test::Unit::TestCase
 
   def test_class_method_run
     assert_kind_of String, Perb::PerbBase.connection.instance_variable_get(:@config)[:database]
-    assert_equal "/home/chris/.perb/perb.sqlite3", Perb::PerbBase.connection.instance_variable_get(:@config)[:database]
+    assert_equal "db/perb.sqlite3", Perb::PerbBase.connection.instance_variable_get(:@config)[:database]
 
     ary = Perb::PerbTest.new(config).run
     records = Perb::PerbBase.all.size
