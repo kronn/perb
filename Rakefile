@@ -1,7 +1,10 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require 'active_record'
+
 require 'logger'
 require 'yaml'
-require 'ruby-debug'
 
 namespace :db do
   db_yml=File.expand_path('~/.perb/database.yml')
@@ -32,3 +35,12 @@ namespace :db do
     end
   end
 end
+
+namespace :test do
+  desc 'run tests'
+  task :all do
+    require './test/all'
+  end
+end
+
+task :default => ['test:all']
