@@ -127,7 +127,7 @@ class TestPerbParser < Test::Unit::TestCase
     def klass
       PerbParser
     end
-    
+
     def input1
       [
         "httperf --timeout=5 --client=0/1 --server=localhost --port=3000 --uri=/ --rate=5 --send-buffer=4096 --recv-buffer=16384 --num-conns=30 --num-calls=10",
