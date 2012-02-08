@@ -8,11 +8,11 @@ Therefore you need httperf, a database and maybe some things I missed.
 
 h2. Installation / Setup
 
-  mkdir ~/.perb
-  cp config/database.example.yml ~/.perb/database.yml
-  cp config/settings.example.yml ~/.perb/settings.yml
-  vim ~/.perb/*.yml
-  # time passes as you try to quit vim :)
+bq. mkdir ~/.perb
+cp config/database.example.yml ~/.perb/database.yml
+cp config/settings.example.yml ~/.perb/settings.yml
+vim ~/.perb/*.yml
+# time passes as you try to quit vim :)
 
 h3. notes
 
@@ -23,8 +23,8 @@ configuration you want to make.
 
 h2. Invocation
 
-  cd /path/to/perb
-  bin/perb
+bq. cd /path/to/perb
+bin/perb
 
 Then, check your DB for results
 
