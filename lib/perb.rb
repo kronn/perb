@@ -5,6 +5,7 @@ end
 
 require 'yaml'
 require 'bundler/setup'
+require 'active_record'
 
 module Perb
   require 'perb/perb_test'
