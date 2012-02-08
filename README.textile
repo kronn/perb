@@ -1,0 +1,44 @@
+h1. PERB
+h3. run httperf and save results to a database
+
+PERB is a front-end for httperf, saving test results in a database.
+
+Therefore you need httperf, a database and maybe some things I missed.
+
+h2. Installation / Setup
+
+  mkdir ~/.perb
+  cp config/database.example.yml ~/.perb/database.yml
+  cp config/settings.example.yml ~/.perb/settings.yml
+  vim ~/.perb/*.yml
+  # time passes as you try to quit vim :)
+
+h3. notes
+
+For starters, I recommend using sqlite3.
+
+The settings.yml contains a list of testable targets, so thats the main
+configuration you want to make.
+
+h2. Invocation
+
+  cd /path/to/perb
+  bin/perb
+
+Then, check your DB for results
+
+h2. Contributors
+
+The initial work has been done by Chris Flöß and Johannes Strampe.
+
+h2. Forks/Patches/Stuff
+
+You cannot fork, patch and improve this project.
+It's just technically impossible.
+Even I can't. Noone can.
+
+You may, however, try it and prove me wrong.
+
+h2. LICENSE
+
+I haven't found a license in the original repo, but I release my changes MIT-Licensed.
