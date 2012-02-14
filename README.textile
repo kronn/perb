@@ -8,15 +8,22 @@ Therefore you need httperf, a database and maybe some things I missed.
 
 h2. Installation / Setup
 
-bq. mkdir ~/.perb
+bq. git clone git://github.com/kronn/perb.git
+cd perb/
+bundle install
+mkdir ~/.perb
 cp config/database.example.yml ~/.perb/database.yml
 cp config/settings.example.yml ~/.perb/settings.yml
 vim ~/.perb/*.yml
 # time passes as you try to quit vim :)
+rake db:migrate
 
 h3. notes
 
-For starters, I recommend using sqlite3.
+For starters, I recommend using sqlite3. If you are not using sqlite3, please
+make sure the database exists before migrating. Alternatively, you may endure
+the error message and create the database before invoking @rake db:migrate@ the
+second time.
 
 The settings.yml contains a list of testable targets, so thats the main
 configuration you want to make.
